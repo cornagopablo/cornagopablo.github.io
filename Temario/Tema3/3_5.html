@@ -1,0 +1,109 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="../../Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                <ul>
+                    <li><a href="../../index.html" class="nonActive">Índice</a></li>
+                    <li><a href="../Tema1/1_0.html" class="nonActive">Tema 1</a></li>
+                    <li><a href="../Tema2/2_0.html" class="nonActive">Tema 2</a></li>
+                    <li><a href="3_0.html" class="active">Tema 3</a></li>
+                    <li><a href="../Tema4/4_0.html" class="nonActive">Tema 4</a></li>
+                    <li><a href="../Tema5/5_0.html" class="nonActive">Tema 5</a></li>
+                    <li><a href="../Tema6/6_0.html" class="nonActive">Tema 6</a></li>
+                    <li><a href="../Tema7/7_0.html" class="nonActive">Tema 7</a></li>
+                    <li><a href="../Tema8/8_0.html" class="nonActive">Tema 8</a></li>
+                    <li><a href="../Tema9/9_0.html" class="nonActive">Tema 9</a></li>
+                    <li><a href="../Tema10/10_0.html" class="nonActive">Tema 10</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Sistemas biométricos</h2>
+            <p>La biometría es el estudio de los métodos que permiten reconocer seres humanos basándose en rasgos físicos, de conduta y/o genéticos.</p>
+            <p>La biometría permite autentificar personas utilizando fórmulas o técnicas matemáticas para asegurar que la persona es quien dice ser sin prácticamente error.</p>
+            <p>Cuando hablamos de características físicas, nos estamos refiriendo a rasgos como la huella dactilar, el iris del ojo o las venas de la mano.</p>
+            <p>Cuando hablamos de factores genéticos, fundamentalmente nos estamos refiriendo al ADN. Y de conduzta, a rasgos como la voz o la forma de andar.</p>
+            <br><br>
+            <h3>Historia</h3>
+            <p>El origen de la biometría puede situarse en torno al siglo XIV en China, con la aparición de restos de huellas dactilares impresas en arcillas</p>
+            <p>En occidente durante el siglo XIX un policía francés, Alphonse Bertillón, ideó un método para identificar a los delincuentes que consistía en la toma de medidas de alguna parte del cuerpo, así como marcas y cicatrices que permitían identificar a los sujetos. Esta ciencia se conoce con el nombre de <b>antropometría</b>, que más adelante se expandirá por el resto de Europa y Estados Unidos. Sin embargo, este sistema no era fiable porque aunque remota, existe la posibilidad de que dos personas tengan las mismas medias y marcas parecidas.</p>
+            <p>En 1892 (Finales del siglo XIX), el antropólogo Francis Galton propuso un sistema de identificación mediante huella dactilar conocido con el nombre de <b>dactiloscopia</b>. Se basa a grandes rasgos en el dibujo que forman las líneas de las yemas de los dedos de cada persona, que son invariables a lo largo de la vida de una persona.</p>
+            <p>Actualmente el método más fiable para identificar a una persona es el ADN, pero no ha desplazado a la dactiloscopia por la complejidad y el coste de este método.</p>
+            <br><br>
+            <h3>Indicadores biométricos</h3>
+            <p>Para que un control de acceso basado en un sistema biométrico pueda considerarse fiable debe cumplir 4 indicadores:</p>
+            <ol>
+                <li><b>Universalidad</b>. Cualquier persona posee esa característica.</li>
+                <li><b>Unicidad</b>. La existencia de dos personas con una característica idéntica tiene una probabilidad muy pequeña.</li>
+                <li><b>Permanencia</b>. La característica no cambia con el tiempo.</li>
+                <li><b>Cuantificación</b>. La característica puede ser medida en forma cuantitativa.</li>
+            </ol>
+            <br><br>
+            <h3>Características exigibles a un sistema biométrico</h3>
+            <ol>
+                <li><b>Efectividad</b>. Su uso debe ser cómodo y rápido para los usuarios.</li>
+                <li><b>Aceptabilidad</b>. No debe provocar rechazo en las personas, ni debe ser peligroso para su salud</li>
+                <li><b>Fiabilidad</b>. Sus resultados deben de ser fiables al máximo y difíciles de trucar.</li>
+            </ol>
+            <br><br>
+            <h3>Funcionamiento de un sistema biométrico</h3>
+            <p>El reconocimiento biométrico puede utilizarse de 2 formas distintas:</p>
+            <ol>
+                <li><b>Identificación</b> (quién eres). Consiste en que una vez obtenidas las características biométricas del individuo se realiza una búsqueda para determinar a qué persona pertenece. Por ejemplo, una muestra de ADN que es comparada con una base de datos de muestras de ADN.</li>
+                <br>
+                <li><b>Verificación</b> (eres tú quien dices ser). Consiste en la verificación de que una persona en cuestión es la que dice ser. Por ejemplo, una persona aporta su nombre de usuario y a continuación pasa su huella por el lector, comprobándose si ese nombre corresponde con esa huella.</li>
+            </ol>
+            <p>El proceso de verificación es <b>uno a uno</b> ( 1 : 1 ), mientras que el de identificación es <b>uno a varios</b> ( 1 : N ).</p>
+            <br><br>
+            <h3>Nivel de exigencia</h3>
+            <p>Teniendo en cuenta que un sistema biométrico no es infalible: bien porque marquemos un nivel de exigencia muy alto, que nos produzca muchos <b>falsos rechazos</b>; o por el contrario marquemos un nivel de exigencia muy bajo, que produzca muchas <b>falsas aceptaciones</b>. Habrá que encontrar un punto de equilibrio entre ambas cosas.</p>
+            <p style="text-align: center;"><img src="../../Images/Tema3/tema3_img1.jpg" alt="curva pe"></p>
+            <p>El <b>punto de equilibrio</b> (PE) se admite como bueno si se da una tasa inferior al 0,1% de falsas aceptaciones e inferior al 2% de falsos rechazos.</p>
+            <br><br>
+            <h3>Sistemas biométricos para el control de acceso</h3>
+            <p>Teniendo en cuenta que esta tecnología está en constante evolución y que por ello aparecen nuevos sistemas continuamente, actualmente los más conocidos son:</p>
+            <ol>
+                <li><b>Huella dactilar</b>. Los sistemas biométricos de huellas dactilares utilizan las características únicas y los patrones de huellas. Pueden utilizar la tecnología óptica, capacitativa, térmica, de presión y campo eléctrico.</li>
+                <br>
+                <li><b>Reconocimiento facial</b>. Es una tecnología que se basa en la imagen de un rostro y en la medición de la distribución de varios puntos. Es un sistema en constante desarrollo con una fiabilidad media que aumenta si el sistema utiliza tecnología 3D.</li>
+                <br>
+                <li><b>Reconocimiento de iris</b>. Es una tecnología que permite la identificación del sujeto por aquella parte del ojo que otorga el color y que es inalterable a lo largo de la vida. Otra tecnología biométrica asociada al ojo es la del escaneo de los vasos sanguíneos de la retina, menos utilizada que la anterior  por considerarse más intrusiva.</li>
+                <br>
+                <li><b>Reconocimiento de mano</b>. Existen dos tecnologías biométricas asociadas a la mano: una de ellas analiza su geometría; y la otra, analiza el entramado de venas que circulan por ella, mediante la reflexión de la hemoglobina al reacionar con un haz infrarrojo.</li>
+                <br>
+                <li><b>Otros</b>. Los continuos avances tecnológicos en este campo permiten el desarrollo de nuevos sistemas, como por ejemplo los consistentes en: pulsaciones cardiacas, el reconocimiento de voz, la forma de andar, la forma de teclear, etc.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="3_4.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="3_6.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="../../Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>
