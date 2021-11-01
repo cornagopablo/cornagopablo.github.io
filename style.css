@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
         top:-66.8px;
         font-family: var(--headerFont);
         font-size: 1.2em;
+        z-index: 2;
     }
     #siHeaderMainMenu ul {
         list-style: none;
@@ -112,6 +113,21 @@ h1, h2, h3, h4, h5, h6 {
                     background: var(--menuPrimaryColor);                    
                     text-shadow: var(--shadowActiveFont);
                 }
+
+                /*#siHeaderMainMenu ul li ul {
+                    display: none;
+                    position: absolute;
+                    width: 300px;
+                    box-shadow: var(--shadow);
+                    z-index: 1;
+                }
+                    #siHeaderMainMenu ul li:hover > ul {
+                        display: block;
+                    }
+                #siHeaderMainMenu ul li ul li {
+                    position: relative;
+                }*/
+
 #siArticle {
     position: relative;
     top: 235px;
