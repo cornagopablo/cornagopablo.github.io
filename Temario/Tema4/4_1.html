@@ -1,0 +1,102 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="stylesheet" href="../../style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="../../Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                <ul>
+                    <li><a href="../../index.html" class="nonActive">Índice</a></li>
+                    <li><a href="../Tema1/1_0.html" class="nonActive">Tema 1</a></li>
+                    <li><a href="../Tema2/2_0.html" class="nonActive">Tema 2</a></li>
+                    <li><a href="../Tema3/3_0.html" class="nonActive">Tema 3</a></li>
+                    <li><a href="4_0.html" class="active">Tema 4</a></li>
+                    <li><a href="../Tema5/5_0.html" class="nonActive">Tema 5</a></li>
+                    <li><a href="../Tema6/6_0.html" class="nonActive">Tema 6</a></li>
+                    <li><a href="../Tema7/7_0.html" class="nonActive">Tema 7</a></li>
+                    <li><a href="../Tema8/8_0.html" class="nonActive">Tema 8</a></li>
+                    <li><a href="../Tema9/9_0.html" class="nonActive">Tema 9</a></li>
+                    <li><a href="../Tema10/10_0.html" class="nonActive">Tema 10</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Seguridad activa</h2>
+            <h3>Sistemas de alimentación ininterrumpida (SAI - UPS)</h3>
+            <p>Constituyen un elemeneto básico de protección de nuestro hardware y por extensión de los datos almacenados en él. A pesar de que por su nombre podríamos pensar que solo sirven para administrar energía durante un corte, además de hacer esa función durante un tiempo limitado, también sirven para proteger el hardware de picos, imperfecciones y caídas de tensión.</p>
+            <p style="text-align: center;"><img src="../../Images/Tema4/tema4_img1.jpg" alt="imperfecciones"></p>
+            <br>
+            <p>Existen varios tipos de SAIS:</p>
+            <ul>
+                <li><b>Standby u offline</b>. Existe una corriente eléctrica directa, con algunos filtros, que pasa a través del SAI hasta el elemeneto qeu se quiere corregir. Consigue corregir pequeñas imperfecciones del suministro eléctrico que cuando son superadas, el SAI pasa a suministrar energía con sus propias baterías. Es habitual su uso en ordenadores personales.</li>
+                <br>
+                <li><b>Interactivos</b>. Ofrecen más protecciones que las anteriores pero su técnica es la misma. Su batería suele durar menos tiempo porque el elemeneto a proteger toma corriente de ella con más frecuencia. Es el que se suele utilizar en los pequeños servidores.</li>
+                <br>
+                <li><b>Online</b>. Trabaja constantemente proporcionando su propia corriente, independientemente de la que circula por la red. Es el que se suele utilizar en los centros de proceso de datos.</li>
+            </ul>
+            <p style="text-align: center;"><img src="../../Images/Tema4/tema4_img2.jpg" alt="SAIS"></p>
+            <br>
+            <p>La unidad de potencia que utilizan los SAI son los <b>voltiamperios</b> (<b>VA</b>), que es la potencia aparente. 
+            Mientras que la potencia efectiva es la que se mide en <b>vatios</b> (<b>W</b>).</p>
+            <p>Para calcular el SAI que necesitaremos, multiplicaremos la potencia efectiva por 1,4 y tendremos la potencia aparente.</p>
+            <br>
+            <p>En cuanto a la instalación de un SAI debemos tener en cuenta algunas cuestiones básicas:</p>
+            <ol>
+                <li>Manejarlo con precaución, por la elevada carga de sus baterías.</li>
+                <br>
+                <li>Elegir un lugar adecuado para instalarlos.</li>
+                <br>
+                <li>El orden de conexión de un SAI es:
+                    <ol>
+                        <li>Enchufar todas las conexiones salientes. Es decir, todos los dispositivos que queremos proteger.</li>
+                        <li>Enchufar las conexiones entrantes. Es decir, la alimentación del propio SAI.</li>
+                    </ol>
+                </li>
+            </ol>
+            <br>
+            <p>En cuanto a mantenimiento:</p>
+            <ul>
+                <li>Realizar inspecciones periódicas (conexiones, limpiezas, etc.)</li>
+                <br>
+                <li>Comprobar el funcionamiento midiendo sus valores eléctricos mediante un osciloscopio o a través de su propio software, gracias a las conexiones USB y/o Ethernet que suelen incorporar de serie.</li>
+            </ul>
+            <br><br>
+            <h3>Regleta protectora</h3>
+            <p>Es la solución más económica para la protección de las imperfecciones eléctricas, pero no son comparables a los SAIS, principalmente porque no protegen frente al corte de suministro. A pesar de ello, son útiles porque protegen de los problemas eléctricos más habituales.</p>
+            <br><br>
+            <h3>Grupo electrógeno</h3>
+            <p>Un grupo electrógeno	es una máquina que genera energía eléctrica mediante un motor de combustión. Es habitual encontrarlos como medida de protección en lugares críticos como por ejemplo, en hospitales o en salas de servidores.</p>
+            <br><br>
+            <h3>Monitorización del hardware</h3>
+            <p>Se usa para comprobar el correcto funcionamiento del sistema y detectar errores en los componentes físicos, por ejemplo: comprobar la temperatura de la CPU, la velocidad de giro de los ventiladores, etc.</p>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="../Tema3/3_6.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="4_1.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="../../Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>
