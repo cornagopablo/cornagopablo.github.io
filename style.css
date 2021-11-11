@@ -6,6 +6,7 @@
     --secondaryColorLight: ;
     --secondaryColorLight: ;
     --menuPrimaryColor: rgba(0, 100, 183, 1);
+    --menuSecondaryColor: rgba(0, 144, 234, 0.98);
     --menuSecondaryColorOpacity: rgba(0, 100, 183, 0.8);
     --headerFont: 'Libre Baskerville', serif;
     --regularFont: 'Montserrat', sans-serif;
@@ -59,6 +60,13 @@ h1, h2, h3, h4, h5, h6 {
     top: -180px !important;
 }
 
+.active {
+    background: var(--menuPrimaryColor);
+}
+    .active a {
+        color: white !important;
+        text-shadow: var(--shadowActiveFont) !important;
+    }
 
 #siHeader {
     position: absolute;
@@ -80,53 +88,70 @@ h1, h2, h3, h4, h5, h6 {
         height: 220px;
     }
     #siHeaderMainMenu {
-        position: relative;
-        top:-66.8px;
+        position: absolute;
+        bottom: 0;
+        overflow: visible;
+        background: var(--menuSecondaryColorOpacity);
         font-family: var(--headerFont);
-        font-size: 1.2em;
-        z-index: 2;
     }
-    #siHeaderMainMenu ul {
-        list-style: none;
-        padding: 0;
-    }
-        #siHeaderMainMenu ul > li {
+    
+        #siHeaderMainMenu a {
+            font-family: inherit;
+            font-size: 1.2em;
             float: left;
+            color: black;
+            text-shadow: var(--shadowNonActiveFont);
+            text-align: center;
+            padding: 0;
+            text-decoration: none;
         }
-            #siHeaderMainMenu ul li a {
-                text-decoration: none;
+        
+        #siHeaderMainMenu #dropDown {
+            float: left;
+            overflow: hidden;
+        }
+        
+            #siHeaderMainMenu #dropDown #dropbtn {
+                font-size: inherit;
+                border: none;
+                outline: none;
                 color: black;
-                display: block;
                 padding: 10px 11.74px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
             }
-                .active {
-                    color: white !important;
-                    background: var(--menuPrimaryColor);
-                    text-shadow: var(--shadowActiveFont);
-                }
-                .nonActive {
-                    background: var(--menuSecondaryColorOpacity);
-                    text-shadow: var(--shadowNonActiveFont);
-                }
-                #siHeaderMainMenu li a:hover {
-                    color: white !important;
-                    background: var(--menuPrimaryColor);                    
-                    text-shadow: var(--shadowActiveFont);
-                }
+        
+        #siHeaderMainMenu a:hover, #siHeaderMainMenu #dropDown:hover #dropbtn, #siHeaderMainMenu #dropDown:hover #dropbtn > a {
+            color: white !important;
+            text-shadow: var(--shadowActiveFont);
+            background: var(--menuPrimaryColor);
+        }
 
-                /*#siHeaderMainMenu ul li ul {
-                    display: none;
-                    position: absolute;
-                    width: 300px;
-                    box-shadow: var(--shadow);
-                    z-index: 1;
+        #siHeaderMainMenu #dropDownContent {
+            display: none;
+            position: absolute;
+            background: var(--menuSecondaryColor);
+            min-width: 160px;
+            box-shadow: var(--shadow);
+            z-index: 1;
+        }
+        
+            #siHeaderMainMenu #dropDownContent a {
+                float: none;
+                color: black;
+                padding: 10px 11.74px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+                #siHeaderMainMenu #dropDownContent a:hover {
+                    background: var(--menuPrimaryColor);
                 }
-                    #siHeaderMainMenu ul li:hover > ul {
-                        display: block;
-                    }
-                #siHeaderMainMenu ul li ul li {
-                    position: relative;
-                }*/
+        
+        #siHeaderMainMenu #dropDown:hover #dropDownContent {
+            display: block;
+        }
 
 #siArticle {
     position: relative;

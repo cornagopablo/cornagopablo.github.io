@@ -4,7 +4,7 @@
 window.onscroll = function() {siMenuSticky()};
 
 // Get the header and the menu
-var menu = document.getElementById("siHeaderMainMenu")
+var menu = document.getElementById("siHeaderMainMenu");
 var header = document.getElementById("siHeader");
 
 // Get the offset position of the menu
@@ -18,3 +18,10 @@ function siMenuSticky() {
         header.classList.remove("sticky");
     }
 }
+
+// Same menu for all html pages
+
+// load document inside menu div
+$(document).ready(function(){
+    $('#siHeaderMainMenu').load("/menu.html");
+});
