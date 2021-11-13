@@ -1,0 +1,72 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="../../Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Seguridad pasiva</h2>
+            <p>Está demostrado que por mucha seguridad activa que se implemente es imposible cubrir el 100% de las vulnerabilidades, por lo que es imprescindible la implantación de medidas de seguridad pasivas.</p>
+            <br>
+            <h3>Mecanismos de tolerancia a fallos</h3>
+            <p>Se conoce con el término de tolerancia a fallos a la capacidad que tiene un sistema de seguir funcionando aún en el caso de fallo de algunos de sus componentes.</p>
+            <p>La estrategia más destacada para conseguir un sistema lo más tolerante a fallos posible, es la redundancia, que no es más que la duplicidad del componente. Esta puede ser de dos tipos:</p>
+            <ol>
+                <li><b>Estática</b>. Los componentes están siempre activos y funcionando.</li>
+                <br>
+                <li><b>Dinámica</b>. Los componentes redundantes entran en funcionamiento cuando se produce el fallo en el componente principal.</li>
+            </ol>
+            <br>
+            <p>Los componentes que más se utilizan para la redundancia son:</p>
+            <ul>
+                <li><b>Discos duros</b>. Utilizando la tecnología RAID, en concreto RAID1 obtendremos un grupo de discos físicamente independientes que se comportan como un solo disco duro lógico, es lo que se llama espejo (mirror).</li>
+                <br>
+                <li><b>Fuentes de alimentación</b>. Es habitual encontrar en los servidores, un número de 2 fuentes de redundancia que en caso de fallos de una, funcione la otra, es decir, redundancia dinámica.</li>
+                <br>
+                <li><b>Tarjetas de red</b>. Es habitual encontrar al menos 2 componentes de este tipo, redundancia estática porque a parte de aportar seguridad añaden rendimiento al sistema (balanceo de carga).</li>
+            </ul>
+            <br><br>
+            <h3>Renovación de equipos</h3>
+            <p>Pasado un tiempo desde la compra de un equipamiento informático, llega el momento de su renovación y no solo porque deje de funcionar correctamente, sino por su obsolescencia.</p>
+            <ul>
+                <li>La obsolescencia es la caída en desuso de máquinas, equipos y tecnologías motivada no por un mal funcionamiento del mismo, sino por un insuficiente desempeño de sus funciones en comparación con las nuevas máquinas, equipos y tecnologías introducidos en el mercado.</li>
+            </ul>
+            <p>Un buen indicador de la obsolescencia puede ser el plazo de amortización de este tipo de equipamiento, que se sitúa en torno a 3 o 4 años.</p>
+            <p>Una buena forma de solucionar el problema económico que conlleva la renovación de todo un equipamiento informático, es hacerlo mediante financieras como <b>renting</b> y <b>leasing</b>.</p>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="4_1.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="#" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="../../Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+</html>

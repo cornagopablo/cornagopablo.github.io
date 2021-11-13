@@ -268,3 +268,32 @@ table, td, th {
 iframe {
     box-shadow: var(--shadow);
 }
+
+
+/* Índice */
+#siIndice a {
+    text-decoration: none;
+    color: black;
+}
+
+#siIndice ul, #siInidce li {
+    list-style: outside none !important;
+}
+
+#siIndice > ul > li {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+#siIndice > ul > li > ul > li {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+#siIndice > ul > li > ul > li > ul > li {
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 1.4em;
+}
