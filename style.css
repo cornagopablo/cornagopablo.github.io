@@ -1,10 +1,4 @@
 :root {
-    --primaryColor: ;
-    --primaryColorLight: ;
-    --primaryColorDark: ;
-    --secondaryColor: ;
-    --secondaryColorLight: ;
-    --secondaryColorLight: ;
     --menuPrimaryColor: rgba(0, 100, 183, 1);
     --menuSecondaryColor: rgba(0, 144, 234, 0.98);
     --menuSecondaryColorOpacity: rgba(0, 100, 183, 0.8);
@@ -298,6 +292,8 @@ iframe {
     line-height: 1.4em;
 }
 
+
+/* 404 */
 #si404 {
     display: flex;
     height: calc(100vh - 220px);
