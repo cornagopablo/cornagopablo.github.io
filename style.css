@@ -2,11 +2,28 @@
     --menuPrimaryColor: rgba(0, 100, 183, 1);
     --menuSecondaryColor: rgba(0, 144, 234, 0.98);
     --menuSecondaryColorOpacity: rgba(0, 100, 183, 0.8);
-    --headerFont: 'Libre Baskerville', serif;
+    --headerFont: 'Libre-Baskerville', serif;
     --regularFont: 'Montserrat', sans-serif;
     --shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
     --shadowActiveFont: 0px 0 5px rgba(0, 0, 0, 0.8);
     --shadowNonActiveFont: 0px 0 5px rgba(255, 255, 255, 0.8);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/Fonts/Montserrat-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(/Fonts/Montserrat-Semibold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Libre-Baskerville;
+    src: url(/Fonts/LibreBaskerville-Bold.ttf);
 }
 
 body {
@@ -161,6 +178,19 @@ h1, h2, h3, h4, h5, h6 {
     }
     #siArticleMain p {
         text-indent: 1em;
+    }
+
+
+#siExtra {
+    background-color: var(--menuSecondaryColor);
+    color: white;
+    padding: 16px;
+    box-shadow: var(--shadow);
+}
+    #siExtra a {
+        text-decoration: underline;
+        color: black;
+        font-weight: bold;
     }
 
 
