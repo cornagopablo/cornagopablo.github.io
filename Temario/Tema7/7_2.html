@@ -1,0 +1,55 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="/Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Redes Privadas Virtuales</h2>
+            <p>Conocidas con el nombre de VPN, son redes que se implementan sobre una red pública como, por ejemplo, Internet. Los datos viajan siempre encriptados, por lo que solo pueden ser cifrados/descifrados por emisor y receptor.</p>
+            <p>Para que el tráfico de una VPN pueda considerarse seguro, es imprescindible que garantice las 4 propiedades básicas de la información segura.</p>
+            <br>
+            <p>Existen cuatro formas de conexión VPN:</p>
+            <ol>
+                <li><b>VPN de acceso remoto</b>. Los usuarios una vez autenticados, pueden acceder a los recursos de la red local como si estuviesen en ella, pero desde ubicaciones remotas. Es quizás el modelo más utilizado actualmente.</li>
+                <br>
+                <li><b>VPN tunneling</b>. Partiendo de la base de que Internet es un medio inseguro, podemos crear a través de ella un camino seguro, creando un tunel entre emisor y receptor. Esto se consigue encapsulando un protocolo de red sobre otro, como por ejemplo SSH.</li>
+                <br>
+                <li><b>VPN punto a punto</b>. Funciona de forma similar a la anterior, pero el servidor en lugar de esperar la conexión del equipo remoto para aceptarlo, está permanentemente conectado a Internet aceptando las conexiones de los diversos clientes y estableciendo el túnel correspondiente para cada uno de ellos.</li>
+                <br>
+                <li><b>VPN over LAN</b>. Es una variante del tipo "acceso remoto", pero en vez de utilizar Internet como medio de conexión, emplea la misma red de área local (LAN) de la empresa. Sirve para aislar zonas y servicios de la red interna.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="7_1.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="7_3.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="/Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

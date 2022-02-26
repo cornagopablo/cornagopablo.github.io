@@ -1,0 +1,72 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="/Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Modelo OSI</h2>
+            <p>El modelo OSI (Open System Interconnection) es un modelo conceptual en el que se definen las capas o niveles que intervienen en la comunicación de datos de cada uno de los niveles, tienen sus propias vulnerabilidades y sus medidas de protección:</p>
+            <ol>
+                <li><b>Nivel físico</b>. En esta capa se definen los componentes físicos para mantener una conexión entre dispositivos, por lo que la seguridad en este nivel consistirá en garantizar que el cableado y los dispositivos tengan medidas de protección para impedir la pérdida de información. Por ejemplo: los SAI, los controles de acceso físico, etc.</li>
+                <br><br>
+                <li><b>Nivel de enlace.</b> Es la capa donde se preparan los datos para ser enviados a nivel de red. Las vulnerabilidades de este nivel pueden ser, por ejemplo: la suplantación de direcciones MAC, las intrusiones en redes inalámbricas con técnicas como el wardriving y el ARP Spoofing o envenenamiento de tablas ARP.</li>
+                <br><br>
+                <li><b>Nivel de red</b>. Es la capa en la que se garantiza que la información que se envía del emisor llega al receptor. Al trabajar sobre el protocolo IP, es propenso a vulnerabilidades como la suplantación de IP y los ataques DOS y DDOS o ataques de denegación de servicios.
+                <br>
+                Las medidas de seguridad de esta capa pueden ser la limitación de acceso por IP, los firewall y los IDS (Sistemas de Detección de Intrusos).
+                <br>
+                Otro de los elementos clave para la seguridad informática dentro de esta capa es la Lista de Control de Acceso o ACL. Esta permite o deniega conexiones entre equipos pertenecientes a redes diferentes según el protocolo, los puertos o las direcciones IP involucradas en la comunicación.
+                <br>
+                El router es el dispositivo más importante de esta capa, por lo que es muy importante para impedir el control no autorizado del mismo (utilización de contraseñas fuertes y administración a través de conexiones cifradas).</li>
+                <br><br>
+                <li><b>Nivel de transporte</b>. Es la capa que se encarga de que la información llegue sin errores.
+                <br>
+                Al trabajar sobre los protocolos TCP y UDP, su principal vulnerabilidad son los puertos lógicos, por lo que las medidas de seguridad serán controlar los puertos que tenemos abiertos y el tráfico que hay a través de ellos.
+                <br>
+                La utilización de protocolos de capa 4 de comunicación segura como SSL, TLS o SSH, permiten la protección de los datos mediante el cifrado de los mismos, y deben ser considerados al momento de establecer conexiones para la administración remota de dispositivos.
+                <br>
+                La actualización de aplicaciones para salvaguardar la red de las vulnerabilidades y errores que puedan presentar, constituye otra de las medidas de fortalecimiento.</li>
+                <br><br>
+                <li><b>Nivel de sesión</b>. Es la capa que se encarga de la relación entre los usuarios y la red. Su punto más vulnerable es la acción de los analizadores de protocolos, más conocidos con el nombre de "Sniffers", por lo que la seguridad fundamentalmente será la utilización de un buen firewall. A diferencia de los firewalls de capa de red o capa de trasporte, aquellos que trabajan sobre esta capa, permiten filtrar paquetes con base a un gran abanico de opciones, incluyendo una gran diversidad de protocolos.</li>
+                <br><br>
+                <li><b>Nivel de presentacion</b>. Es la capa que se encarga del tratamiento del contenido de la información, por lo que su seguridad dependerá fundamentalmente de los algoritmos de encriptación que se utilicen.</li>
+                <br><br>
+                <li><b>Nivel de aplicación</b>. Es la capa que se encarga de que las aplicaciones puedan acceder a las demás capas, por lo que la seguridad tendrá que estar definida en las propias aplicaciones.</li>
+            </ol>
+            <br><br>
+            <p style="text-align: center;"><img src="/Images/Tema7/comparacion.png" alt="OSI vs TPC/IP" style="width: 80%;"></p>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="7_0.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="7_2.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="/Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
