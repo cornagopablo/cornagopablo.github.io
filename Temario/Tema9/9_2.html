@@ -1,0 +1,95 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="/Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Redundancia y distribución de la información</h2>
+            <p>El término RAID, hace referencia a un conjunto redundante de discos independientes, que distribuyen o replican los datos.</p>
+            <p>Dependiendo de su configuración a la que se puede llamar "nivel de beneficios del RAID", estos beneficios son:</p>
+            <ul>
+                <li>Mayor integridad.</li>
+                <br>
+                <li>Mayor tolerancia a fallos.</li>
+                <br>
+                <li>Mayor rendimiento.</li>
+                <br>
+                <li>Mayor capacidad.</li>
+            </ul>
+            <br>
+            <p>Históricamente, la tecnología RAID fue definida en 1987 por un grupo de informáticos que pensaron en utilizar uno o más discos como un único disco en el sistema.</p>
+            <p>A la hora de implementar un RAID, lo podemos hacer por software, por hardware o por ambos.</p>
+            <p>Las implementaciones por hardware utilizan un controlador de RAID específico a través de una tarjeta independiente y suelen ofrecer mejor rendimiento y función de hotswap que los software.</p>
+            <p>En los sistemas híbridos, en realidad, el hardware es una controladora de discos normal, pero el sistema incorpora una aplicación de bajo nivel para implementar el RAID.</p>
+            <br>
+            <p>Se definen normalmente cinco niveles de RAID, pero se pueden contemplar más "variantes".</p>
+            <ol>
+                <li><b>RAID 0 (Data Striping)</b>. También llamado "conjunto dividido". Lo que hace es distribuir los datos equitativamente entre los discos sin información de paridad que proporcione redundancia. El RAID 0 no era uno de los niveles RAID originales, ya que no es redundante, se usa normalmente para incrementar el rendimiento al acceso de los datos, pero también puede utilizarse para crear un gran disco duro virtual a partir de un gran número de discos físicos pequeños. Un RAID 0 se puede crear con discos de diferentes tamaños, pero el resultado final estará limitado por el tamaño del disco más pequeño. Es decir, la capacidad del más pequeño por el número de discos.</li>
+            </ol>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img2.png" alt="RAID 0" style="height: 400px;"></p>
+            <br>
+            <ol start="2">
+                <li><b>RAID 1 (Mirroring)</b>. Es una copia exacta de un conjunto de datos en dos o más discos. La redundancia es total y garantiza la disponibilidad de la información en caso de fallo en alguno de los discos.
+                <br>
+                Dado que los datos están en dos o más discos, el rendimiento de escritura disminuye de forma lineal al número de discos, mientras que en el caso de lectura puede aumentarse utilizando controladoras de discos independientes.
+                <br>
+                En caso de utilizar discos de diferentes tamaños, el tamaño del RAID será el del más pequeño.</li>
+            </ol>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img3.png" alt="RAID 1" style="height: 400px;"></p>
+            <br>
+            <ol start="3">
+                <li><b>RAID 5</b>. Este tipo de RAID tiene bastante popularidad porque implementa redundancia y aumento de la capacidad de almacenamiento. Para construir este RAID son necesarios al menos tres discos. En dos de ellos se almacena la información como en un RAID 0 y en el tercer disco, la información de control de la paridad. El bloque de paridad se calcula a partir de los bloques de datos de la misma línea, de forma que será un 1 si hay un número impar de unos en el primer bloque de datos de la misma línea y un 0 si hay un número par de unos.</li>
+            </ol>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img4.png" alt="RAID 5" style="height: 400px;"></p>
+            <br>
+            <ol start="4">
+                <li><b>RAID 6</b>. Es lo mismo que el RAID 5, pero añade otro bloque de paridad, por tanto ofrece tolerancia extremadamente alta a los fallos. Proporciona protección contra fallos dobles de discos y contra fallos cuando se está reconstruyendo un disco. No penaliza el rendimiento de las operaciones de lectura, pero si el de escritura debido al proceso que exigen los cálculos adicionales de paridad.</li>
+            </ol>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img5.png" alt="RAID 6" style="height: 400px;"></p>
+            <br>
+            <ol start="5">
+                <li><b>RAID Anidados</b>. Muchos controladores de RAID permiten añadir diferentes niveles de RAID. Se conocen con el nombre de RAID Anidados y se indican normalmente añadiendo el símbolo "+" entre los diferentes niveles. Los más comunes son el RAID 0+1 (un espejo de divisiones) y el RAID 1+0 (una división de espejo, lo contrario).</li>
+            </ol>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img6.png" alt="RAID 1+0" style="height: 500px;"></p>
+            <br>
+            <p style="text-align: center;"><img src="/Images/Tema9/tema9_img7.png" alt="RAID 0+1" style="height: 500px;"></p>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="9_1.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="9_3.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="/Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

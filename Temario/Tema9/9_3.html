@@ -1,0 +1,63 @@
+<!--Cuaderno de Seguridad Informática de Pablo Cornago Gómez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuaderno Pablo Cornago</title>
+    <link rel="icon" href="/Images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <div id="siHeader">
+        <div id="siHeaderMain">
+            <div id="siHeaderMainBackground">
+                <img src="/Images/header.jpg" alt="background">
+            </div>
+            <div id="siHeaderMainMenu">
+                
+            </div>
+        </div>
+    </div>
+    <div id="siArticle">
+        <div id="siArticleMain">
+            <h2>Centros de respaldo</h2>
+            <p>La otra opción que hay para hacer posible la redundancia y la distribución de la información, son los centros de respaldo.</p>
+            <p>Un Centro de Respaldo se diseña bajo los mismos principios que cualquier CPD, pero bajo algunas consideracines más.</p>
+            <br>
+            <p>En primer lugar, debe elegirse una localización totalmente distinta a la CPD principal con el objeto de que no se vean afectados ambos simultáneamente por la misma contingencia. Por ello es habitual situarlos entre 20 y 40 kilómetros del CPD principal. La distancia está limitada por las necesidades de telecomunicaciones entre ambos centros.</p>
+            <br>
+            <p>En segundo lugar, el equipamiento electrónico e informático del Centro de Respaldo debe ser absolutamente compatible con el existente en el CPD principal. Esto no implica que el equipamiento deba ser exáctamente igual. Normalmente, no todos los procesos del CPD principal son críticos, por este motivo no es necesario duplicar todo el equipamiento y por otra parte, tampoco se requiere el mismo nivel de servicio en caso de emergencia. En consecuencia, es posible utilizar hardware menos potente.</p>
+            <p>En función de su equipamiento, la sala principal de un Centro de Respaldo, recibe estas denominaciones:</p>
+            <ul>
+                <li><b>Sala blanca</b>. Cuando el equipamiento es exáctamente igual al existente en el CPD principal</li>
+                <br>
+                <li><b>Sala de back-up</b>. Cuando el equipamiento es similar pero no exáctamente igual.</li>
+            </ul>
+            <br>
+            <p>En tercer lugar, en cuanto al equipamiento software éste debe ser idéntico al existente en el CPD principal. Esto implica exáctamente las mismas versiones y parches del Sistema Operativo y de las aplicaciones corporativas que estén en explotación en el CPD principal. De otra manera, no se podría garantizar totalmente la continuidad de operación.</p>
+            <br>
+            <p>Por último, pero no menos importante, es necesario contar con una réplica de los mismos datos con los que se trabaja en el CPD original. El problema de los Centros de Respaldo es el conocido como "El sincronismo de datos" y existen dos políticas para resolver este problema:</p>
+            <ol>
+                <li><b>Copia síncrona de datos</b>. Se asegura que todo dato escrito en el CPD principal también se escribe en el centro de respaldo antes de continuar con cualquier otra operación.</li>
+                <br>
+                <li><b>Copia asíncrona de datos</b>. No se asegura que todos los datos escritos en el CPD principal se escriban inmediatamente en el Centro de Respaldo, por lo que puede existir un desfase temporal entre unos y otros.</li>
+            </ol>
+        </div>
+    </div>
+    <div id="siFooter">
+        <div id="siFooterFlecha">
+            <a href="9_2.html" class="prev"><i class="fa fa-angle-left"></i> <b>Anterior</b></a>
+            <a href="9_4.html" class="next"><b>Siguiente</b> <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div id="siFooterMain">
+            <p><a href="mailto:pablo.corgom.1@educa.jcyl.es">Pablo Cornago Gómez | SMR2</a></p>
+            <div id="siFooterMainBackground">
+                <p><img src="/Images/header.jpg" alt="background"></p>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
